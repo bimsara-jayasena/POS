@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.ManagerController">
+   <children>
+      <Pane fx:id="homePane" layoutY="-3.0" prefHeight="721.0" prefWidth="1280.0" />
+      <Pane fx:id="sidePane" prefHeight="738.0" prefWidth="308.0">
+         <children>
+            <Label fx:id="lblName" layoutX="110.0" layoutY="17.0" prefHeight="71.0" prefWidth="146.0" text="user">
+               <font>
+                  <Font size="49.0" />
+               </font>
+            </Label>
+            <Label layoutX="120.0" layoutY="89.0" text="Manager" />
+            <Button fx:id="BtnDashboard" layoutX="-5.0" layoutY="154.0" mnemonicParsing="false" onAction="#btnDashboardActionPerformed" prefHeight="64.0" prefWidth="312.0" text="Dashboard" />
+            <Button fx:id="BtnInventory" layoutX="-5.0" layoutY="242.0" mnemonicParsing="false" onAction="#btnInventoryActionPerformed" prefHeight="64.0" prefWidth="312.0" text="Inventory" />
+            <Button fx:id="BtnSells" layoutX="-5.0" layoutY="338.0" mnemonicParsing="false" onAction="#btnSellsActionPerformed" prefHeight="64.0" prefWidth="312.0" text="Sells" />
+            <Button fx:id="BtnAccount" layoutX="-6.0" layoutY="432.0" mnemonicParsing="false" onAction="#btnAccountActionPerformed" prefHeight="64.0" prefWidth="312.0" text="Account" />
+            <Button fx:id="BtnSettings" layoutX="-5.0" layoutY="534.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="312.0" text="Settings" />
+         </children>
+      </Pane>
+      <Pane fx:id="dashboard" layoutX="307.0" prefHeight="735.0" prefWidth="976.0">
+         <children>
+            <Label focusTraversable="false" layoutX="312.0" layoutY="152.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="85.0" prefWidth="346.0" text="Dashboard">
+               <font>
+                  <Font size="58.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="paneAccount" layoutX="307.0" prefHeight="737.0" prefWidth="974.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <Label layoutX="344.0" layoutY="123.0" text="account">
+               <font>
+                  <Font size="79.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="paneSells" layoutX="307.0" prefHeight="738.0" prefWidth="974.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <Label layoutX="426.0" layoutY="173.0" text="Sells">
+               <font>
+                  <Font size="76.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="inventory" layoutX="309.0" prefHeight="736.0" prefWidth="972.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <Label layoutX="352.0" layoutY="80.0" text="Inventory">
+               <font>
+                  <Font size="73.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
